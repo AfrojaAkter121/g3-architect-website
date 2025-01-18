@@ -29,7 +29,7 @@ body{
 /* navbar starts here */
 header{
     background-color: rgba(255, 144, 14, 0.1);
-   
+ 
 }
 .brand{
     font-weight: 700;
@@ -72,7 +72,7 @@ a{
 }
 /* main section starts */
 main{
-    width: 1440px;
+    /* width: 1440px; */
     margin: 0 auto;
 }
 main > section{
@@ -188,6 +188,7 @@ main > section{
     max-width: 540px;
     text-align: center;
     margin: 50px auto;
+    /* display: none; */
 }
 .sponsor-title{
     font-weight: 700;
@@ -214,6 +215,7 @@ main > section{
      height: 100px;
      margin: 0 auto;
      text-align: center;
+     /* display: none; */
 }
 .footer-des{
     margin-top: 100px;
@@ -224,7 +226,7 @@ main > section{
 /* responsive media starts here */
 @media screen and (max-width: 576px) {
     main, header{
-        width: 500px;
+        width: 100%;
     }
     .navbar, 
     .nav-links,
@@ -237,9 +239,21 @@ main > section{
      .sponsor-company{
         grid-template-columns: repeat(1, 1fr);
     }
+    .feature-title{
+        width: 90%;
+    }
     #experience-badge{
         margin-top:20px ;
         margin-left:20px;
+    }
+    .our-features{
+        max-width: 383px;
+    }
+    .fact-description,
+    .fact-title{
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 20px;
     }
     .fact-container{
         justify-items: center;
@@ -250,8 +264,9 @@ main > section{
         gap: 50px;
     }
     .teams{
-        margin-left: 0px;
-        align-items: flex-start;
+        /* margin-left: 0px; */
+        /* align-items: flex-start; */
+        margin:  0 auto;
     }
     .our-features{
         margin-left: 20px;
@@ -274,5 +289,8 @@ main > section{
     #experience-badge{
         margin-top:20px ;
         margin-left:20px;
+    }
+    .feature-architect2 > img{
+        width: 100%;
     }
    }
